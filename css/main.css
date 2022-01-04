@@ -1,6 +1,108 @@
+/*--------------------------------------
+            Google Font
+----------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/*--------------------------------------
+            Global Style
+----------------------------------------*/
 *{
     margin:0;
     padding:0;
     box-sizing:-border-box;
     outline:none;
+    font-family: 'Poppins', sans-serif;
+    line-height:1.5em;
+    font-size:15px;
+}
+::before::after{
+    box-sizing:border-box;
+}
+img{
+    max-width:100;
+    vertical-align:middle;
+}
+ul{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration:none;
+}
+h1,h2,h3,h4,h5,h6{
+    margin:0;
+}
+.container{
+    max-width:1140px;
+    margin:auto;
+}
+.row{
+    display:flex;  
+}
+.items-center{
+    align-items:center;
+}
+
+/*--------------------------------------
+            Two columns
+----------------------------------------*/
+.col-2-1{
+    width:45%;
+    margin-left:1%;
+    margin-right:1%;
+}
+
+
+
+/*--------------------------------------
+            Header starts
+----------------------------------------*/
+.main-header{
+    background-color:#F5DF4E;
+    min-height:100vh;
+    text-transform:capitalize;
+}
+.main-header h2{
+    font-size:26px;
+    text-transform:uppercase;
+    font-weight:500;
+    color:#212529;
+}
+.main-header h1{
+    font-size:62px;
+    margin:20px 0;
+    font-weight:600;
+    color:#212529;
+    letter-spacing:1px;
+}
+.main-header span{
+    font-size:20px;
+    color:#212529;
+    letter-spacing:1px;
+}
+.main-header .btn-group{
+    display:inlne-block;
+} 
+.main-header .btn-group a{
+    padding:10px 20px;
+    margin:30px 10px;
+    display:inline-block;
+    background-image:linear-gradient(orange, tomato);
+    color:#ffffff;
+    text-transform:capitalize;
+    border-radius:3px;
+    transition:.5s;
+}
+.main-header .btn-group a:nth-child(2):hover{
+text-decoration:underline;
+}
+.main-header .img-box{
+    margin-top:120px;
+}
+.main-header .img-box img{
+    width:80%;
+    height:80%;
+    border-radius:50%;
+    border:10px solid #ffffff;
+    box-shadow:10px 10px 30px gray;
 }
